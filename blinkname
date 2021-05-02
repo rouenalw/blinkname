@@ -1,0 +1,117 @@
+int led1 = D6; // Instead of writing D0 over and over again, we'll write led1
+// You'll need to wire an LED to this one to see it blink.
+
+int led2 = D7; // Instead of writing D7 over and over again, we'll write led2
+// This one is the little blue LED on your board. On the Photon it is next to D7, and on the Core it is next to the USB jack.
+
+// Having declared these variables, let's move on to the setup function.
+// The setup function is a standard part of any microcontroller program.
+// It runs only once when the device boots up or is reset.
+
+void setup() {
+
+
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+
+}
+
+void loop() {
+  // To blink the LED, first we'll turn it on...
+  //digitalWrite(led2, HIGH);
+  //for short1
+  digitalWrite(led1, HIGH);
+  delay(100);
+  digitalWrite(led1, LOW);
+  delay(100);
+  
+    //for long
+   digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+  //for short2
+  digitalWrite(led1, HIGH);
+  delay(100);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+  
+    //for long
+   digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+    //for long
+   digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+    //for long
+   digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+  
+  //for short3
+  digitalWrite(led1, HIGH);
+  delay(100);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+  //for short4
+  digitalWrite(led1, HIGH);
+  delay(100);
+  digitalWrite(led1, LOW);
+  delay(100);
+  
+    //for long
+   digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+  
+  //for short1
+  digitalWrite(led1, HIGH);
+  delay(100);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+    //for long
+   digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  
+  //for short2
+  digitalWrite(led1, HIGH);
+  delay(100);
+  digitalWrite(led1, LOW);
+  delay(100);
+  
+  
+
+  
+  
+
+  
+    
+    
+    
+    
+    
+  // We'll leave it on for 1 second...
+  delay(8000);
+
+  // Then we'll turn it off...
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+
+  //digitalWrite(led2, LOW);
+
+}
